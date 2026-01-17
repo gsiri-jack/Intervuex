@@ -1,0 +1,78 @@
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+    padding: 2rem;
+    max-height: 800px;
+    min-height: 600px;
+    margin: 2rem 0.5rem;
+    /* border: 1px solid red; */
+  
+}
+
+.hero-content {
+    max-height: 500px;
+    height: 70%;
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+  
+    padding: 2rem;
+}
+.hero-content .text{
+    margin: auto;
+}
+.hero-content .text h1{
+    font-size: 2.8rem;
+    font-family: "Lustria";
+}
+.hero-content .text .pacifco{
+     font-family: "Pacifico";
+  font-weight: 400;
+  font-style: normal;
+    color: blueviolet;
+}
+.hero-content .text p{
+    font-family: "Lato";
+    width: 80%;
+    margin: 1rem 0px;
+
+
+}
+.hero-content .text h1 span{
+    font-size: 3.01rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.hero-content .primary-btn{
+    height: 50px;
+        width: 200px;
+        font-size: 1rem;
+    margin-left: 1.2rem;
+    margin-top: 3rem;
+    
+
+
+}
+
+.hero-right {
+   width: 45%;
+   height: 98%;
+   margin: auto;
+  max-height: 500px;
+   display: grid;
+   grid-template-rows: 0.5fr 3.5fr;
+   gap: 0.7rem;
+   background-image: url(../../../assets/heroBg.png);
+   background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.hero-right div{
+    display: none;
+}
+
+
+
+/* Right side design abstract  */

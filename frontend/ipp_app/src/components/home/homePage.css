@@ -1,0 +1,14 @@
+body{
+    max-height: 1100PX;
+    max-width: 1600px;
+    margin: auto;
+}
+.hero{
+    margin: 0px;
+}
+.testmonial-section{
+    margin-bottom: 1.5rem;
+}
+.footer-section{
+    margin: 0px;
+}

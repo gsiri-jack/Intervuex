@@ -1,0 +1,70 @@
+*{
+    font-size: 1.1rem;
+}
+
+.testmonial-section{
+    height: 80vh;
+    max-height: 800px;
+}
+
+.testmonial-header{
+    text-align: center;
+}
+
+.testmonial-container{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    
+}
+
+.testmonial-card{
+    margin: auto 15px;
+    border-radius: 25px;
+    padding: 10px 7px;
+    height: 50vh;
+    max-height: 400px;
+    width: 33%;
+    background-color: rgb(246, 240, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* .testmonial-card p{
+    
+} */
+.testmonial-card .testmonial-text{
+    margin: 5px 10px;
+}
+.testmonial-card .testmonial-text img{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 10px;
+}
+
+.testmonial-card .testmonial-userDetails{
+    display: flex;
+    margin-left: 1rem;
+}
+
+.testmonial-card .testmonial-userDetails .userDetails-name{
+    margin-left: 0.7rem;
+}
+
+.testmonial-card .userAvatar{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid darkred;
+    border-radius: 50%;
+}
+
+
+.testmonial-scrollbar{
+    width: 300px;
+    height: 9%;
+    margin: auto;
+}
+
