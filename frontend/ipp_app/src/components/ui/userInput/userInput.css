@@ -1,0 +1,24 @@
+.userInput-component{
+    display: flex;
+    border-bottom: 1px solid rebeccapurple;
+    width: max-content;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.userInput-component input{
+    border: none;
+    width: 90%;
+    background-color: rgba(245, 245, 245, 0);
+}
+.userInput-component input:focus, .userInput-component input:active, .userInput-component input:hover{
+    border: none;
+    background-color: rgba(245, 245, 245, 0);
+    outline: none;
+}
+
+
+.userInput-component .userInput-icon .icon{
+  font-size: 22px;
+
+}

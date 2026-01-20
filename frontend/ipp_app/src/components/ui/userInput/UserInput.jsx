@@ -1,11 +1,13 @@
-
+import "./userInput.css";
 
 function UserInput(props){
+    const Icon = props.icon;
     return (
-        <div className="userInput-component">
-            <input type="text" name="" id="" placeholder={props.inText} />
+        
+       <div className={`${props.className} userInput-component`}>
+            <input type={props.type} name="" id="" placeholder={props.inText} />
             <div className="userInput-icon">
-                {props.icon && <props.icon className="icon" />}
+                {Icon && <Icon className="icon" />}
             </div>
         </div>
     );
