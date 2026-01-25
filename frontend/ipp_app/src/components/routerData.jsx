@@ -1,7 +1,8 @@
 import React from "react";
 import HomePage from "./home/HomePage";
 import LoginPage from "./login/LoginPage";
-import SignInPage from "./signIn/SignInPage"
+import SignInPage from "./signIn/SignInPage";
+import UserDashboard from "./userDashboard/UserDashboard";
 
 const AppRoutes = [
     {
@@ -15,6 +16,10 @@ const AppRoutes = [
     {
         path: "/signIn",
         element: <SignInPage />
+    },
+    {
+        path: "/user",
+        element: <UserDashboard />
     }
 ];
 

@@ -1,0 +1,41 @@
+.recentInterview-section{
+    width: 99%;
+    height: 90vh;
+    max-height: 400px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recentInterview-section .recentInterview-box {
+    width: 97%;
+    height: 93%;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recentInterview-section .recentInterview-box .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    /* border: 1px solid saddlebrown; */
+}
+
+.recentInterview-section .recentInterview-box .interviewCards-container {
+    height: 90%;
+    max-height: 400px;
+    /* background-color: darkblue; */
+    display: flex;
+    align-items: center;
+    
+}
+
+.recentInterview-section .recentInterview-box .interviewCards-container .box{
+
+    display: flex;
+
+}

@@ -1,0 +1,67 @@
+.recentInterviewCard-section{
+    margin: 7px;
+    margin-right: 20px;
+    background-color: aliceblue;
+    padding: 5px;
+    width: 300px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.recentInterviewCard-section .interviewCard-container{
+    width: 97%;
+    height: 97%;
+}
+
+.recentInterviewCard-section .interviewCard-container .card-grid{
+
+    display: grid;
+    grid-template-rows: 1.4fr 1.2fr 1.2fr 1.2sfr;
+    row-gap: 5px;
+    
+}
+
+.interviewCard-container .card-grid .row1{
+    display: flex;
+}
+
+.interviewCard-container .card-grid .row2{
+    display: flex;
+}
+
+.interviewCard-container .card-grid .row3{
+    display: flex;
+}
+
+.interviewCard-container .card-grid .row4{
+    display: flex;
+}
+.interviewCard-container .card-grid .row1 .r1-col1{
+    width: 70%;
+    max-width: 75%;
+    border: 1px solid darkblue;
+}
+.interviewCard-container .card-grid .row1 .r1-col2{
+    margin-left: 5px;
+    min-width: 70px;
+    height: 70px;
+    border: 1px solid rebeccapurple;
+}
+.interviewCard-container .card-grid .row2 .r2-col1{
+    width: 70%;
+    max-width: 75%;
+    border: 1px solid darkblue;
+}
+.interviewCard-container .card-grid .row3 .r3-col1{
+    width: 70%;
+    max-width: 75%;
+    border: 1px solid darkblue;
+}
+.interviewCard-container .card-grid .row4 .r4-col1{
+    width: 70%;
+    max-width: 75%;
+    border: 1px solid darkblue;
+}
