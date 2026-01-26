@@ -1,10 +1,10 @@
-import "./UserDashboard.css"
+import "./userDashboard.css"
 import Navbar from "../layout/navbar/Navbar";
 import UserDashboardHeroSection from "./userDashboardHeroSection/UserDashboardHeroSection"
 import RecentInterviewSection from "./RecentInterviewsSection/RecentInterviewsSection";
 import RecommendedInterviewSection from "./recommendedInterviews/RecommendedInterviewsSection";
-
 import CategorizedOptionSection from "./CategorizedOptionSection/CategorizedOptionSection"
+import SkillBasedSection from "./SkillBasedSection/SkillBasedSection";
 
 function UserDashboard() {
     return (
@@ -14,6 +14,7 @@ function UserDashboard() {
             <RecentInterviewSection />
             <RecommendedInterviewSection />
             <CategorizedOptionSection />
+            <SkillBasedSection />
             <h1>end</h1>
             <h1>page</h1>
         </section>

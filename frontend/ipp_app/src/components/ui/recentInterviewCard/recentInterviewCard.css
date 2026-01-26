@@ -1,10 +1,11 @@
 .recentInterviewCard-section{
     margin: 7px;
     margin-right: 20px;
-    background-color: aliceblue;
-    padding: 5px;
-    width: 300px;
+    background-color: var(--thin-light-background-color);
+    padding: 10px;
+    width: 280px;
     height: 180px;
+    max-height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,55 +14,109 @@
 
 .recentInterviewCard-section .interviewCard-container{
     width: 97%;
-    height: 97%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .recentInterviewCard-section .interviewCard-container .card-grid{
-
-    display: grid;
-    grid-template-rows: 1.4fr 1.2fr 1.2fr 1.2sfr;
-    row-gap: 5px;
+    height: 99%;
+    margin: 5px;
+    grid-template-rows: 1.4fr 1.2fr 1.2fr 1.2fr;
     
 }
 
 .interviewCard-container .card-grid .row1{
     display: flex;
+    margin-top: 5px;
 }
 
 .interviewCard-container .card-grid .row2{
     display: flex;
+    padding: 2px;
+    align-items: center;
+    font-family: "Lato";
+    font-size: 1rem;
+    margin-top: 10px;
+
 }
 
 .interviewCard-container .card-grid .row3{
     display: flex;
+    font-family: "Lato";
+    font-size: 1rem;
+    margin-top: 10px;
+
+
 }
 
 .interviewCard-container .card-grid .row4{
     display: flex;
+    font-family: "Lato";
+    font-size: 1rem;
+    margin-top: 10px;
+
 }
 .interviewCard-container .card-grid .row1 .r1-col1{
     width: 70%;
     max-width: 75%;
-    border: 1px solid darkblue;
+    font-family: "Lustria";
+    font-size: 18px;
 }
 .interviewCard-container .card-grid .row1 .r1-col2{
-    margin-left: 5px;
-    min-width: 70px;
+    width: 70px;
     height: 70px;
-    border: 1px solid rebeccapurple;
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 10px;
+}
+.interviewCard-container .card-grid .row1 .r1-col2 img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+
+    
 }
 .interviewCard-container .card-grid .row2 .r2-col1{
     width: 70%;
-    max-width: 75%;
-    border: 1px solid darkblue;
+    display: flex;
+    align-items: center;
+
 }
+
+.interviewCard-container .card-grid .icon{
+    overflow: visible;
+    margin-right: 8px;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    opacity: 0.6;
+}
+
+.interviewCard-container .card-grid .row2 .r2-col2{
+    display: flex;
+    width: 25%;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.interviewCard-container .card-grid .row2 .r2-col2 .icon{
+    color: gold;
+    
+}
+
 .interviewCard-container .card-grid .row3 .r3-col1{
     width: 70%;
     max-width: 75%;
-    border: 1px solid darkblue;
+    display: flex;
+    align-items: center;
 }
 .interviewCard-container .card-grid .row4 .r4-col1{
     width: 70%;
     max-width: 75%;
-    border: 1px solid darkblue;
+    display: flex;
+    align-items: center;
 }

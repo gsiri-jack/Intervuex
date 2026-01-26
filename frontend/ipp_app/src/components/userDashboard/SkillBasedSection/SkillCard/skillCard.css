@@ -1,0 +1,30 @@
+.skillCard-section{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0px 10px;
+    max-width: 250px;
+    height: 60px;
+    border-radius: 15px;
+}
+.skillCard-section .box{
+    margin-left: 15px;
+    display: flex;
+    width: 97%;
+    height: 99%;
+    align-items: center;
+}
+
+.skillCard-section .box img{
+    width: 2.3rem;
+    height: 2.3rem;
+    
+    margin-right: 10px;
+}
+
+
+.skillCard-section .box h4{
+    font-size: 0.9rem;
+    font-family: "Lato";
+}

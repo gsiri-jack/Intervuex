@@ -1,9 +1,20 @@
 import "./recentInterviewsSection.css"
 import { Link } from "react-router-dom";
 import Card from "../../ui/recentInterviewCard/RecentInterviewCard"
+import { useState, useEffect } from "react";
 
+// todo: Testing purpose
+import recentInterviewData from "../../../TestingData/recentInterview" 
 
 function RecentInterviewSection(props) {
+
+    const [interviews, setInterviews] = useState([]);
+    useEffect (() => {
+        const ApiData = recentInterviewData;
+
+        setInterviews(ApiData);
+    })
+
     return (
         <section className="recentInterview-section">
             <div className="recentInterview-box">
@@ -17,10 +28,20 @@ function RecentInterviewSection(props) {
                 </div>
                 <div className="interviewCards-container">
                     <div className="box">
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
+
+                        {
+                            interviews.map((interview) => (
+                                <Card
+                                    title={interview.title}
+                                    activity={interview.takenOn}
+                                    time = {interview.time}
+                                    score = {interview.score}
+                                    rating = {interview.rating}
+                                    imgPath = {interview.logo}
+                                />
+                            )
+                        )
+                        }
 
                     </div>
                 </div>

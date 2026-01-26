@@ -1,12 +1,12 @@
-import "./recentInterviewsSection.css"
+import "./recommendedInterviewsSection.css"
 import { Link } from "react-router-dom";
 import Card from "../../ui/recentInterviewCard/RecentInterviewCard"
 
 
 function RecommendedInterviewSection(props) {
     return (
-        <section className="recentInterview-section">
-            <div className="recentInterview-box">
+        <section className="recommendedInterview-section">
+            <div className="recommendedInterview-box">
                 <div className="header">
                     <div className="heading">
                         <h4>Recommended Interviews</h4>
