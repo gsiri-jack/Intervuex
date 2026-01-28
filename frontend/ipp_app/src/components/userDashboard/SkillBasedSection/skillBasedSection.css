@@ -23,6 +23,11 @@
     justify-content: space-between;
     align-items: center;
     height: 10%;
+    font-family: "Lato";
+}
+.skillBased-section .container .header h4{
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .skillBased-section .container .skill-grid{
@@ -32,3 +37,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 0.7rem;
 }
+.skillBased-section .container .skill-grid .knowMore .skillCard-section .box img{
+    opacity: 0.6;
+}
+

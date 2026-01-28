@@ -1,5 +1,5 @@
 .userStatsOne-section{
-    background-color: #F8F8FF;
+    background-color: var(--thin-light-background-color);
      display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,10 +7,10 @@
 
 }
 
-.userStatsOne-section .statsContainer{
+/* .userStatsOne-section .statsContainer{
    
    
-}
+} */
 
 .userStatsOne-section h1{
 

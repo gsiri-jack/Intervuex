@@ -36,7 +36,7 @@
     display: flex;
     padding: 2px;
     align-items: center;
-    font-family: "Lato";
+    font-family: "Funnel Sans";
     font-size: 1rem;
     margin-top: 10px;
 
@@ -44,7 +44,7 @@
 
 .interviewCard-container .card-grid .row3{
     display: flex;
-    font-family: "Lato";
+    font-family: "Funnel Sans";
     font-size: 1rem;
     margin-top: 10px;
 
@@ -53,7 +53,7 @@
 
 .interviewCard-container .card-grid .row4{
     display: flex;
-    font-family: "Lato";
+    font-family: "Funnel Sans";
     font-size: 1rem;
     margin-top: 10px;
 

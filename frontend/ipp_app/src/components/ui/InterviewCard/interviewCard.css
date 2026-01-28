@@ -1,0 +1,142 @@
+.card-container {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 16px;
+  padding: 24px;
+  font-family: "Funnel Sans";
+  background: var(--thin-light-background-color);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin: 1rem;
+  max-height: 300px;
+}
+
+.card-container .card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.card-container .card-header .company-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.card-container .card-header .role-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+  min-height: 65px;
+  font-family: "Funnel Sans";
+}
+
+.card-container .card-header h2 {
+  font-weight: 500;
+}
+
+/* Tag Logic */
+.card-container .tag-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.card-container .tag {
+  background: #f0f0f7;
+  color: #4a4e69;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  word-break: break-word; 
+  max-width: 150px;
+}
+
+.card-container .stats-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.card-container .rating-box{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+
+.card-container .rating-star{
+  color: #f4b400;
+  margin-right: 3px;
+
+}
+
+.card-container .difficulty-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.card-container .difficulty-badge.easy {
+background-color: #1b8a4f; /* green */
+color: #ffffff;
+}
+
+
+/* MEDIUM */
+.card-container .difficulty-badge.medium {
+background-color: #f4b400; /* amber */
+color: #1f1f1f;
+}
+
+
+/* HARD */
+.card-container .difficulty-badge.hard {
+background-color: #d93025; /* red */
+color: #ffffff;
+}
+
+.card-container .description {
+  color: #444;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.card-container .divider {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.card-container .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-container .duration{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    
+}
+
+.card-container .duration .clock-icon{
+    font-size: 22px;
+    overflow: visible;
+    margin-right: 5px;
+}
+.start-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-family: "Funnel Sans";
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

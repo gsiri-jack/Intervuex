@@ -1,41 +1,47 @@
-import "./skillBasedSection.css"
+import "./skillBasedSection.css";
+import SkillCard from "./SkillCard/SkillCard";
+import skillsList from "../../../TestingData/skillBasedInterviews";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import ArrowLogo from "../../../assets/icons/arrow-right-short.svg"
+function SkillBasedSection() {
+  const [skills, setSkills] = useState([]);
 
-import SkillCard from "./SkillCard/SkillCard"
-import Logo from "../../../assets/skillLogo/python.svg"
-import { Link }from "react-router-dom"
+  useEffect(() => {
+    setSkills(skillsList);
+  }, []);
 
-function SkillBasedSection(props){
-    return (
-        <section className="skillBased-section">
-            <div className="container">
-                <div className="header">
-                    <div className="heading">
-                        <h4>Recommended Interviews</h4>
-                    </div>
-                    <div className="headerCta">
-                        <Link></Link>
-                    </div>
-                </div>
-                <div className="skill-grid">
-                   <SkillCard skillTitle="python" imgPath={Logo} />
-                   <SkillCard skillTitle="python" imgPath={Logo} /> 
-                   <SkillCard skillTitle="python" imgPath={Logo} /> 
-                   <SkillCard skillTitle="python" imgPath={Logo} /> 
+  return (
+    <section className="skillBased-section">
+      <div className="container">
+        <div className="header">
+          <div className="heading">
+            <h4>Skill Based</h4>
+          </div>
+          <div className="headerCta">
+            <Link to="/skills">View All</Link>
+          </div>
+        </div>
 
-                   <SkillCard skillTitle="python" imgPath={Logo} /> 
-                   <SkillCard skillTitle="python" imgPath={Logo} /> 
-                   <SkillCard skillTitle="python" imgPath={Logo} /> 
-                   <SkillCard skillTitle="python" imgPath={Logo} /> 
-                
-                   <SkillCard skillTitle="python" imgPath={Logo} /> 
-                   <SkillCard skillTitle="know more" imgPath={Logo} /> 
+        <div className="skill-grid">
+          {skills.map((skill) => (
+            <SkillCard key={skill.id} data={skill} />
+          ))}
 
-                </div>
-            </div>
-        </section>
-    );
+          {/* Extra CTA Card */}
+          <div className="knowMore">
+            <SkillCard
+            data={{
+              id: "cta",
+              title: "Get more ..",
+              skillLogo: ArrowLogo
+            }}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default SkillBasedSection;
-
- 

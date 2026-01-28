@@ -1,14 +1,19 @@
 import "./UserDashboardHeroSection.css"
 import UserStatsOne from "../../ui/UserStatsOne/UserStatsOne"
 import { BsFire, BsArrowRightShort } from "react-icons/bs";
+import PrimaryBtn from "../../ui/primaryBtn/PrimaryBtn"
 
 function UserDashboardHeroSection() {
+     const username = "jack";
+    const formattedName = username[0].toUpperCase() + username.slice(1);
     return (
         <section className="userDashboardHero-section">
            <div className="userDashboardHero-container">
                 <div className="userDashboardHero-content">
                     <div className="context">
-                        <h1>Hello Jack Welcome back</h1>
+                        <h4>Hello <span>{formattedName}</span>, Welcome back</h4>
+                        <p>Sharpen your answers, improve clarity, and build confidence with every mock interview.</p>
+                        <PrimaryBtn children={"Explore Interviews"}/>
                     </div>
                 </div>
                 <div className="userDashboardHero-stats">
