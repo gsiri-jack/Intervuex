@@ -3,6 +3,7 @@ import HomePage from "./home/HomePage";
 import LoginPage from "./login/LoginPage";
 import SignInPage from "./signIn/SignInPage";
 import UserDashboard from "./userDashboard/UserDashboard";
+import SearchBar from "./ui/searchBar/SearchBar";
 
 const AppRoutes = [
     {
@@ -20,6 +21,10 @@ const AppRoutes = [
     {
         path: "/user",
         element: <UserDashboard />
+    },
+     {
+        path: "/search",
+        element: <SearchBar />
     }
 ];
 

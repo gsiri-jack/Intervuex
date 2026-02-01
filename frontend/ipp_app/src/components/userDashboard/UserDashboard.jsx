@@ -10,6 +10,7 @@ function UserDashboard() {
     return (
         <section className="userDashboard-section">
             <Navbar />
+            <hr style={{margin: '5px 20px'}}/>
           <UserDashboardHeroSection />
             <RecentInterviewSection />
             <RecommendedInterviewSection />
